@@ -1,0 +1,338 @@
+@font-face {
+  font-family: "Headlines";
+  src: url(fonts/PlayfairDisplay-заголовки.ttf);
+}
+
+@font-face {
+  font-family: "TypedText";
+  src: url(fonts/MontserratAlternates-наборный.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #384e39;
+  color: #e7f5e7;
+  font-family: "TypedText";
+}
+
+/*заголовки*/
+.heading {
+  font-family: "Headlines";
+  color: #bd9d60;
+  font-size: 28px;
+  margin-bottom: 18px;
+  margin-top: 28px;
+  margin-left: 15px;
+}
+
+/*кнопки*/
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #efead7;
+  color: #384e39;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 10px;
+  width: 179px;
+  height: 48px;
+  border: none;
+  cursor: pointer;
+}
+
+/*бургер*/
+.burger-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #384e39;
+  z-index: 1000;
+  display: block;
+  flex-direction: column;
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+.burger-menu-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 26px;
+  padding-bottom: 20px;
+  margin-right: 18px;
+  margin-left: 16px;
+}
+
+.close-menu {
+  width: 28px;
+  height: auto;
+  cursor: pointer;
+}
+
+.menu-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-list {
+  list-style: none;
+  margin-bottom: 28px;
+}
+
+.menu-link {
+  display: inline-block;
+  font-family: "Headlines";
+  font-size: 32px;
+  color: #e7f5e7;
+  text-decoration: none;
+  margin-bottom: 30px;
+  transition: all 0.3s ease-out;
+}
+
+.menu-link.active {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 1px;
+
+  transform: translateX(20px);
+}
+
+.menu-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-left: 38px;
+}
+
+.contact-link,
+.contact-address {
+  font-family: "TypedText";
+  color: #e7f5e7;
+  font-size: 18px;
+}
+
+/* шапка */
+.header {
+  margin-top: 26px;
+  margin-left: 16px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 31px;
+  width: auto;
+  cursor: pointer;
+}
+
+.burger-menu {
+  width: 49px;
+  height: auto;
+  cursor: pointer;
+  margin-right: 16px;
+}
+
+/*баннер*/
+.title-1 {
+  font-family: "Headlines";
+  color: #bd9d60;
+  font-size: 38px;
+  margin-left: 41px;
+  margin-top: 20px;
+}
+
+.title-2 {
+  font-family: "Headlines";
+  color: #bd9d60;
+  font-size: 34px;
+  margin-left: 128px;
+  margin-top: -18px;
+  margin-bottom: 25px;
+}
+
+/*наборный текст*/
+.description {
+  font-size: 17px;
+  margin-bottom: 18px;
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
+.img-main {
+  width: 180px;
+  height: auto;
+  display: block;
+}
+
+.image-btn-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 16px;
+  margin-top: 18px;
+}
+
+/*о нас*/
+.about-img {
+  width: 83px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: 16px;
+  margin-bottom: 18px;
+}
+
+/*проекты*/
+.projects-img-large {
+  width: 273px;
+  height: auto;
+  margin-left: 16px;
+  margin-bottom: 18px;
+}
+
+.projects-img-small {
+  width: 179px;
+  height: auto;
+}
+
+.img-small-1 {
+  display: block;
+  margin-left: auto;
+  margin-right: 16px;
+}
+
+.img-small-2 {
+  margin-top: -153px;
+}
+
+.projects-btn-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 16px;
+  margin-top: 18px;
+}
+
+/*подать заявку*/
+.feedback-container {
+  margin-top: 18px;
+}
+
+.feedback-form input,
+.feedback-form select {
+  width: 93%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #e7f5e7;
+  color: #e7f5e7;
+  font-size: 20px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 28px;
+  padding-bottom: 15px;
+  outline: none;
+  font-family: "TypedText";
+}
+
+.feedback-form input::placeholder {
+  color: #e7f5e7;
+  opacity: 1;
+}
+
+.feedback-form select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10L12 15L17 10' stroke='%23e7f5e7' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 5px) center;
+  background-size: 35px;
+}
+
+.feedback-form select option {
+  background-color: #384e39;
+  color: #e7f5e7;
+  font-family: "TypedText";
+}
+
+.form-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: 16px;
+  margin-bottom: 28px;
+}
+
+/*футер*/
+.logo-footer {
+  width: 370px;
+  height: auto;
+  margin-left: 16px;
+  display: block;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 28px;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-left: 16px;
+  margin-top: 18px;
+}
+
+.footer-link {
+  color: #e7f5e7;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 18px;
+  text-align: right;
+  margin-right: 16px;
+  margin-top: 18px;
+  font-size: 12px;
+}
+
+.footer-contacts-item {
+  color: #f2efe9;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+.footer-bottom p {
+  font-size: 12px;
+  color: #f2efe9;
+}

@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>505 STUDIO - студия дизайна интерьера</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="burger-menu-overlay" id="burgerMenu">
+      <div class="menu-header container">
+        <img src="image/логотип.png" alt="505 STUDIO" class="logo" />
+        <img
+          src="image/закрыть.png"
+          alt="Закрыть"
+          class="close-menu"
+          id="closeMenu"
+        />
+      </div>
+
+      <nav class="menu-content container">
+        <ul class="menu-list">
+          <li><a href="#about" class="menu-link active">О СТУДИИ</a></li>
+          <li><a href="#" class="menu-link">УСЛУГИ</a></li>
+          <li><a href="#" class="menu-link">ПОРТФОЛИО</a></li>
+          <li><a href="#" class="menu-link">ПРОФИЛЬ</a></li>
+        </ul>
+
+        <div class="menu-contacts">
+          <p>+71234567889</p>
+          <p>505_studoi@mail.com</p>
+          <p>г. Чита, ул. Бабушкина, д. 66</p>
+        </div>
+      </nav>
+    </div>
+
+    <header class="header">
+      <div class="container">
+        <a href="index.html" class="logo-link">
+          <img src="image/логотип.png" alt="505 STUDIO" class="logo"
+        /></a>
+        <img
+          src="image/бергер.png"
+          alt="Меню"
+          class="burger-menu"
+          id="burger"
+        />
+      </div>
+    </header>
+
+    <main>
+      <section class="banner" id="mainPage">
+        <h1 class="title-1">Дизайн</h1>
+        <h1 class="title-2">Интерьера</h1>
+        <p class="description">
+          Студия дизайна интерьера 505 STUDIO в Чите создаёт пространства,
+          которые отражают ваш стиль, статус и личность - без компромиссов между
+          красотой и жизнью.
+        </p>
+        <div class="image-btn-banner">
+          <img
+            src="image/картинка_баннер.png"
+            alt="Интерьер"
+            class="img-main"
+          />
+          <a href="#feedback" class="btn btn-banner">Заказать проект</a>
+        </div>
+      </section>
+
+      <section class="about-container" id="about">
+        <h2 class="heading">О НАС</h2>
+        <div class="about-content">
+          <p class="description">
+            505 - это не номер. Это состояние. В песне Arctic Monkeys есть
+            строка: «I crumble completely when you cry». Для нас эта комната -
+            место, где интерьер перестаёт быть просто стенами и становится
+            честным разговором с тем, кто внутри. Мы не украшаем. Мы создаём
+            пространство, в котором можно рассыпаться - и собраться заново.
+          </p>
+
+          <img src="image/картинка_онас.png" alt="Интерьер" class="about-img" />
+
+          <p class="description">
+            В Чите, где холодные зимы и тёплые люди,мы ищем баланс. Жёсткое и
+            мягкое. Порядок и хаос. Минимализм и душу. Наши проекты не кричат о
+            статусе - они заявляют о нём тихо, через свет, пропорции и
+            материалы, которые хочется трогать.
+          </p>
+        </div>
+      </section>
+
+      <section class="projects-container">
+        <h2 class="heading">ЛУЧШИЕ ПРОЕКТЫ</h2>
+        <div class="projects-grid">
+          <img
+            src="image/картинка1_проекты.png"
+            alt="Проект 1"
+            class="projects-img-large"
+          />
+          <img
+            src="image/картинка2_проекты.png"
+            alt="Проект 2"
+            class="projects-img-small img-small-1"
+          />
+          <div class="projects-btn-img">
+            <img
+              src="image/картинка3_проекты.png"
+              alt="Проект 3"
+              class="projects-img-small img-small-2"
+            />
+            <a href="#" class="btn">Все проекты</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="feedback-container" id="feedback">
+        <h2 class="heading">ПОДАТЬ ЗАЯВКУ</h2>
+        <form class="feedback-form">
+          <input type="text" placeholder="Имя" required />
+          <input type="tel" placeholder="Телефон" required />
+          <input type="email" placeholder="E-mail" required />
+
+          <select>
+            <option value="" disabled selected>Тип помещения</option>
+            <option value="flat">Квартира</option>
+            <option value="house">Дом</option>
+            <option value="commerce">Коммерция</option>
+          </select>
+
+          <select>
+            <option value="" disabled selected>Бюджет</option>
+            <option value="low">До 1 млн</option>
+            <option value="mid">1-3 млн</option>
+            <option value="high">От 3 млн и больше</option>
+          </select>
+
+          <button type="submit" class="btn form-btn">Отправить заявку</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer-container">
+      <a href="index.html" class="link-footer">
+        <img src="image/большое_лого.png" alt="505 STUDIO" class="logo-footer"
+      /></a>
+
+      <div class="footer-content">
+        <nav class="footer-nav">
+          <a href="#about" class="footer-link">О СТУДИИ</a>
+          <a href="#" class="footer-link">УСЛУГИ</a>
+          <a href="#" class="footer-link">ПОРТФОЛИО</a>
+        </nav>
+
+        <div class="footer-contacts">
+          <a href="#" class="footer-contacts-item">+71234567889</a>
+          <a href="#" class="footer-contacts-item">505_studio@mail.ru</a>
+          <p class="footer-contacts-item">г. Чита, ул. Бабушкина, д. 66</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Все права защищены. 2026©</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
