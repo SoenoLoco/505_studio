@@ -18,16 +18,17 @@ body {
   background-color: #384e39;
   color: #e7f5e7;
   font-family: "TypedText";
+  min-width: 320px;
 }
 
 /*заголовки*/
 .heading {
   font-family: "Headlines";
   color: #bd9d60;
-  font-size: 28px;
-  margin-bottom: 18px;
-  margin-top: 28px;
-  margin-left: 15px;
+  font-size: 6.76vw;
+  margin-bottom: 4.35vw;
+  margin-top: 6.76vw;
+  margin-left: 3.62vw;
 }
 
 /*кнопки*/
@@ -37,11 +38,11 @@ body {
   justify-content: center;
   background-color: #efead7;
   color: #384e39;
-  font-size: 16px;
+  font-size: 3.86vw;
   text-decoration: none;
-  border-radius: 10px;
-  width: 179px;
-  height: 48px;
+  border-radius: 2.42vw;
+  width: 43.24vw;
+  height: 11.59vw;
   border: none;
   cursor: pointer;
 }
@@ -71,14 +72,14 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 26px;
-  padding-bottom: 20px;
-  margin-right: 18px;
-  margin-left: 16px;
+  padding-top: 6.28vw;
+  padding-bottom: 4.83vw;
+  margin-right: 4.35vw;
+  margin-left: 3.86vw;
 }
 
 .close-menu {
-  width: 28px;
+  width: 6.76vw;
   height: auto;
   cursor: pointer;
 }
@@ -91,45 +92,45 @@ body {
 
 .menu-list {
   list-style: none;
-  margin-bottom: 28px;
+  margin-bottom: 6.76vw;
 }
 
 .menu-link {
   display: inline-block;
   font-family: "Headlines";
-  font-size: 32px;
+  font-size: 7.73vw;
   color: #e7f5e7;
   text-decoration: none;
-  margin-bottom: 30px;
+  margin-bottom: 7.25vw;
   transition: all 0.3s ease-out;
 }
 
 .menu-link.active {
   text-decoration: underline;
-  text-underline-offset: 10px;
-  text-decoration-thickness: 1px;
+  text-underline-offset: 2.42vw;
+  text-decoration-thickness: 0.2vw;
 
-  transform: translateX(20px);
+  transform: translateX(4.83vw);
 }
 
 .menu-contacts {
   display: flex;
   flex-direction: column;
-  gap: 18px;
-  margin-left: 38px;
+  gap: 4.35vw;
+  margin-left: 9.18vw;
 }
 
 .contact-link,
 .contact-address {
   font-family: "TypedText";
   color: #e7f5e7;
-  font-size: 18px;
+  font-size: 4.35vw;
 }
 
 /* шапка */
 .header {
-  margin-top: 26px;
-  margin-left: 16px;
+  margin-top: 6.28vw;
+  margin-left: 3.86vw;
 }
 
 .container {
@@ -139,46 +140,46 @@ body {
 }
 
 .logo {
-  height: 31px;
+  height: 7.49vw;
   width: auto;
   cursor: pointer;
 }
 
 .burger-menu {
-  width: 49px;
+  width: 11.84vw;
   height: auto;
   cursor: pointer;
-  margin-right: 16px;
+  margin-right: 3.86vw;
 }
 
 /*баннер*/
 .title-1 {
   font-family: "Headlines";
   color: #bd9d60;
-  font-size: 38px;
-  margin-left: 41px;
-  margin-top: 20px;
+  font-size: 9.18vw;
+  margin-left: 9.9vw;
+  margin-top: 4.83vw;
 }
 
 .title-2 {
   font-family: "Headlines";
   color: #bd9d60;
-  font-size: 34px;
-  margin-left: 128px;
-  margin-top: -18px;
-  margin-bottom: 25px;
+  font-size: 8.21vw;
+  margin-left: 30.92vw;
+  margin-top: -4.35vw;
+  margin-bottom: 6.04vw;
 }
 
 /*наборный текст*/
 .description {
-  font-size: 17px;
-  margin-bottom: 18px;
-  margin-right: 16px;
-  margin-left: 16px;
+  font-size: 4.11vw;
+  margin-bottom: 4.35vw;
+  margin-right: 3.86vw;
+  margin-left: 3.86vw;
 }
 
 .img-main {
-  width: 180px;
+  width: 43.48vw;
   height: auto;
   display: block;
 }
@@ -187,68 +188,68 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 0 16px;
-  margin-top: 18px;
+  padding: 0 3.86vw;
+  margin-top: 4.35vw;
 }
 
 /*о нас*/
 .about-img {
-  width: 83px;
+  width: 20vw;
   height: auto;
   display: block;
   margin-left: auto;
-  margin-right: 16px;
-  margin-bottom: 18px;
+  margin-right: 3.86vw;
+  margin-bottom: 4.35vw;
 }
 
 /*проекты*/
 .projects-img-large {
-  width: 273px;
+  width: 65.94vw;
   height: auto;
-  margin-left: 16px;
-  margin-bottom: 18px;
+  margin-left: 3.86vw;
+  margin-bottom: 4.35vw;
 }
 
 .projects-img-small {
-  width: 179px;
+  width: 43.24vw;
   height: auto;
 }
 
 .img-small-1 {
   display: block;
   margin-left: auto;
-  margin-right: 16px;
+  margin-right: 3.86vw;
 }
 
 .img-small-2 {
-  margin-top: -153px;
+  margin-top: -36.96vw;
 }
 
 .projects-btn-img {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 0 16px;
-  margin-top: 18px;
+  padding: 0 3.86vw;
+  margin-top: 4.35vw;
 }
 
 /*подать заявку*/
 .feedback-container {
-  margin-top: 18px;
+  margin-top: 4.35vw;
 }
 
 .feedback-form input,
 .feedback-form select {
-  width: 93%;
+  width: calc(100% - 7.72vw);
   background: transparent;
   border: none;
   border-bottom: 2px solid #e7f5e7;
   color: #e7f5e7;
-  font-size: 20px;
-  margin-left: 16px;
-  margin-right: 16px;
-  margin-bottom: 28px;
-  padding-bottom: 15px;
+  font-size: 4.83vw;
+  margin-left: 3.86vw;
+  margin-right: 3.86vw;
+  margin-bottom: 6.76vw;
+  padding-bottom: 3.62vw;
   outline: none;
   font-family: "TypedText";
 }
@@ -265,7 +266,7 @@ body {
   background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10L12 15L17 10' stroke='%23e7f5e7' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: calc(100% - 5px) center;
-  background-size: 35px;
+  background-size: 8.45vw;
 }
 
 .feedback-form select option {
@@ -277,15 +278,15 @@ body {
 .form-btn {
   display: block;
   margin-left: auto;
-  margin-right: 16px;
-  margin-bottom: 28px;
+  margin-right: 3.86vw;
+  margin-bottom: 6.76vw;
 }
 
 /*футер*/
 .logo-footer {
-  width: 370px;
+  width: 89.37vw;
   height: auto;
-  margin-left: 16px;
+  margin-left: 3.86vw;
   display: block;
 }
 
@@ -293,46 +294,46 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 28px;
+  margin-bottom: 6.76vw;
 }
 
 .footer-nav {
   display: flex;
   flex-direction: column;
-  gap: 18px;
-  margin-left: 16px;
-  margin-top: 18px;
+  gap: 4.35vw;
+  margin-left: 3.86vw;
+  margin-top: 4.35vw;
 }
 
 .footer-link {
   color: #e7f5e7;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 2.9vw;
 }
 
 .footer-contacts {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 18px;
+  gap: 4.35vw;
   text-align: right;
-  margin-right: 16px;
-  margin-top: 18px;
-  font-size: 12px;
+  margin-right: 3.86vw;
+  margin-top: 4.35vw;
+  font-size: 2.9vw;
 }
 
 .footer-contacts-item {
   color: #f2efe9;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 2.9vw;
 }
 
 .footer-bottom {
   text-align: center;
-  margin-bottom: 26px;
+  margin-bottom: 6.28vw;
 }
 
 .footer-bottom p {
-  font-size: 12px;
+  font-size: 2.9vw;
   color: #f2efe9;
 }
