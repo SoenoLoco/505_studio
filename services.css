@@ -1,0 +1,78 @@
+/*калькулятор*/
+.calc-form select {
+  width: calc(100% - 7.72vw);
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #e7f5e7;
+  color: #e7f5e7;
+  font-size: 4.83vw;
+  margin-left: 3.86vw;
+  margin-right: 3.86vw;
+  margin-bottom: 6.76vw;
+  padding-bottom: 3.62vw;
+  outline: none;
+  font-family: "TypedText";
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10L12 15L17 10' stroke='%23e7f5e7' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 2.86vw) center;
+  background-size: 8.45vw;
+}
+
+.calc-form select option {
+  background-color: #384e39;
+  color: #e7f5e7;
+  font-family: "TypedText";
+}
+
+.calc-btn {
+  margin-left: auto;
+  margin-right: 3.86vw;
+  margin-bottom: 5.08vw;
+}
+
+.calc-item {
+  margin: 0 3.86vw 12.08vw;
+  margin-bottom: 4.35vw;
+}
+
+.calc-info {
+  font-size: 4.11vw;
+  color: #e7f5e7;
+  margin-bottom: 1.21vw;
+}
+
+.calc-price {
+  font-size: 4.11vw;
+  color: #bd9d60;
+}
+
+.calc-total {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #bd9d60;
+  padding-top: 4.35vw;
+  color: #bd9d60;
+  font-weight: bold;
+  font-size: 3.86vw;
+  margin: 0 3.86vw 12.08vw;
+}
+
+/*карточки услуг*/
+.service-card {
+  margin-bottom: 12.08vw;
+}
+
+.service-img {
+  width: calc(100% - 7.72vw);
+  margin-left: 3.86vw;
+  border-radius: 2.42vw;
+  margin-bottom: 4.35vw;
+  display: block;
+}
+
+.service-btn {
+  margin-left: auto;
+  margin-right: 3.86vw;
+  margin-bottom: 8.08vw;
+}

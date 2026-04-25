@@ -20,6 +20,9 @@ body {
   font-family: "TypedText";
   min-width: 320px;
 }
+section[id] {
+  scroll-margin-top: 25vw;
+}
 
 /*заголовки*/
 .heading {
@@ -29,6 +32,7 @@ body {
   margin-bottom: 4.35vw;
   margin-top: 6.76vw;
   margin-left: 3.62vw;
+  font-weight: lighter;
 }
 
 /*кнопки*/
@@ -128,9 +132,20 @@ body {
 }
 
 /* шапка */
+
+main {
+  margin-top: 22vw;
+}
 .header {
-  margin-top: 6.28vw;
-  margin-left: 3.86vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #384e39;
+  z-index: 999;
+  padding: 6.28vw 3.86vw;
+  margin-top: 0;
+  margin-left: 0;
 }
 
 .container {
@@ -159,6 +174,7 @@ body {
   font-size: 9.18vw;
   margin-left: 9.9vw;
   margin-top: 4.83vw;
+  font-weight: lighter;
 }
 
 .title-2 {
@@ -167,7 +183,8 @@ body {
   font-size: 8.21vw;
   margin-left: 30.92vw;
   margin-top: -4.35vw;
-  margin-bottom: 6.04vw;
+  margin-bottom: 4.04vw;
+  font-weight: lighter;
 }
 
 /*наборный текст*/
@@ -284,7 +301,7 @@ body {
 
 /*футер*/
 .logo-footer {
-  width: 89.37vw;
+  width: calc(100% - 7.72vw);
   height: auto;
   margin-left: 3.86vw;
   display: block;

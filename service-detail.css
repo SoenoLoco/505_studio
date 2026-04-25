@@ -1,0 +1,77 @@
+.content {
+  padding: 0;
+  margin-top: 22vw;
+  margin-bottom: 6.76vw;
+}
+
+.back-link {
+  color: #bd9d60;
+  text-decoration: none;
+  font-size: 5.35vw;
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  font-family: "Headlines";
+  margin-left: 4.8vw;
+  margin-right: 4.8vw;
+}
+
+.back-arrow-icon {
+  width: 5.5vw;
+  height: auto;
+  display: block;
+}
+
+.hero-section {
+  background: url("image/карточка.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding: 60vw 4.8vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4vw;
+  max-height: 156vw;
+  box-sizing: border-box;
+}
+
+.overlay-text {
+  background: #384e39;
+  padding: 5vw 6vw;
+  border-radius: 4.5vw;
+  color: #e7f5e7;
+  line-height: 1.4;
+  font-size: 3.8vw;
+  width: 95%;
+  box-sizing: border-box;
+}
+
+.list-box ul {
+  list-style: none;
+}
+
+.list-box li::before {
+  content: "•";
+  color: #bd9d60;
+  margin-right: 3vw;
+  font-weight: bold;
+}
+
+.list-box li {
+  margin-bottom: 1vw;
+  display: flex;
+  align-items: flex-start;
+}
+
+.btn {
+  align-self: flex-end;
+  background-color: #f1efde;
+  color: #384e39;
+  border: none;
+  padding: 3.5vw 10vw;
+  font-size: 4.3vw;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: auto;
+}
