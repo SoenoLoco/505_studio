@@ -1,0 +1,137 @@
+.content {
+  margin-bottom: 3.86vw;
+  margin-top: 15.86vw;
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3vw;
+  margin-right: 3vw;
+}
+
+.notification-btn img {
+  width: 8vw;
+  margin-left: -11vw;
+}
+
+/*ава*/
+.user-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3.86vw;
+}
+
+.profile-avatar {
+  width: 50vw;
+  height: 50vw;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 4vw;
+}
+
+.profile-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.user-meta {
+  width: calc(100% - 7.72vw);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: 3.86vw;
+  margin-right: 3.86vw;
+}
+
+.user-name {
+  font-family: "Headlines";
+  font-size: 7vw;
+}
+
+.user-handle {
+  font-family: "Headlines";
+  font-size: 6vw;
+  margin-top: -1vw;
+}
+
+.settings-btn img {
+  width: 7vw;
+  margin-left: -10vw;
+  margin-top: 3vw;
+}
+
+/*Меню*/
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #bd9d60;
+  font-size: 7vw;
+  margin-left: 0.86vw;
+  margin-right: 3.86vw;
+  padding: 3vw;
+  font-family: "Headlines";
+}
+
+.arrow {
+  width: 4vw;
+}
+
+.arrow-icon {
+  width: 4vw;
+  transition: transform 0.3s ease;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.accordion.active .arrow-icon {
+  transform: rotate(90deg);
+}
+
+.accordion.active .accordion-content {
+  max-height: 500px;
+}
+
+/*Карточка*/
+.project-mini-card {
+  display: flex;
+  gap: 4vw;
+  padding: 3.86vw 3.86vw;
+  align-items: flex-start;
+}
+
+.project-mini-card img {
+  width: 45vw;
+  height: 45vw;
+  object-fit: cover;
+}
+
+.projects-mini-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.project-mini-info h3 {
+  color: #ac9f2c;
+  font-size: 6vw;
+  margin-bottom: 6vw;
+  font-weight: normal;
+  font-family: "Headlines";
+}
+
+.project-mini-info p {
+  color: #f1efde;
+  font-size: 3.8vw;
+  line-height: 1.4;
+  margin: 0.5vw 0;
+  font-weight: 300;
+}
