@@ -1,0 +1,97 @@
+.auth-container {
+  margin-top: 21vw;
+}
+
+.auth-form {
+  margin-top: 10vw;
+  padding: 0 5vw;
+}
+
+/*Инпуты*/
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 8vw;
+  border-bottom: 1px solid #f1efde;
+}
+
+.input-group input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  padding: 2vw 0;
+  color: #f1efde;
+  font-size: 5vw;
+}
+
+.input-group input::placeholder {
+  color: #f1efde;
+  opacity: 0.8;
+}
+
+.forgot-password {
+  position: absolute;
+  right: 0;
+  bottom: 2vw;
+  color: #f1efde;
+  font-size: 4vw;
+  text-decoration: none;
+}
+
+/*чекбокс*/
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+  margin-bottom: 10vw;
+}
+
+/*другое*/
+.social-login {
+  text-align: center;
+  margin-bottom: 10vw;
+  padding: 0 5vw;
+}
+
+.social-title {
+  color: #bd9d60;
+  font-size: 5vw;
+  margin-bottom: 3vw;
+  margin-top: 7vw;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 2vw;
+}
+
+.social-links a {
+  color: #f1efde;
+  text-decoration: none;
+  font-size: 4.5vw;
+}
+
+.btn{
+  width: 100%;
+  font-size: 4.86vw;
+}
+
+/* Футер авторизации */
+.auth-footer {
+  color: #f1efde;
+  font-size: 4.5vw;
+  padding: 0 5vw;
+  margin-bottom: 5.86vw;
+}
+
+.register-link {
+  color: #f1efde;
+  text-decoration: underline;
+  display: block;
+  margin-top: 1vw;
+}

@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Авторизация - 505 STUDIO</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="auth.css" />
+  </head>
+  <body>
+    <div class="burger-menu-overlay" id="burgerMenu">
+      <div class="menu-header container">
+        <a href="index.html">
+          <img src="image/логотип.png" alt="505 STUDIO" class="logo"
+        /></a>
+        <img
+          src="image/закрыть.png"
+          alt="Закрыть"
+          class="close-menu"
+          id="closeMenu"
+        />
+      </div>
+
+      <nav class="menu-content container">
+        <ul class="menu-list">
+          <li><a href="#about" class="menu-link active">О СТУДИИ</a></li>
+          <li><a href="services.html" class="menu-link">УСЛУГИ</a></li>
+          <li><a href="portfolio.html" class="menu-link">ПОРТФОЛИО</a></li>
+          <li><a href="auth.html" class="menu-link">ПРОФИЛЬ</a></li>
+        </ul>
+
+        <div class="menu-contacts">
+          <p>+71234567889</p>
+          <p>505_studoi@mail.com</p>
+          <p>г. Чита, ул. Бабушкина, д. 66</p>
+        </div>
+      </nav>
+    </div>
+
+    <header class="header">
+      <div class="container">
+        <a href="index.html" class="logo-link">
+          <img src="image/логотип.png" alt="505 STUDIO" class="logo"
+        /></a>
+        <img
+          src="image/бергер.png"
+          alt="Меню"
+          class="burger-menu"
+          id="burger"
+        />
+      </div>
+    </header>
+
+    <main class="content auth-container">
+      <h2 class="heading">АВТОРИЗАЦИЯ</h2>
+
+      <form class="auth-form">
+        <div class="input-group">
+          <input type="email" id="email" placeholder="E-mail" required />
+        </div>
+
+        <div class="input-group">
+          <input type="password" id="password" placeholder="Пароль" required />
+          <a href="#" class="forgot-password">Забыли пароль?</a>
+        </div>
+
+        <div class="checkbox-group">
+          <input type="checkbox" id="remember" class="custon-checlbox" />
+          <label for="remember">Запомнить меня</label>
+        </div>
+        <a href="profile.html" class="btn">Войти</a>
+      </form>
+
+      <div class="social-login">
+        <p class="social-title">Другие способы</p>
+        <div class="social-links">
+          <a href="#">Google</a>
+          <a href="#">Telegram</a>
+          <a href="#">Vk</a>
+          <a href="#">SMS-код</a>
+        </div>
+      </div>
+
+      <div class="auth-footer">
+        <p>Ты новый пользователь?</p>
+        <a href="reg.html" class="register-link">Зарегистрироваться</a>
+      </div>
+    </main>
+
+    <footer class="footer-container">
+      <a href="index.html" class="link-footer">
+        <img src="image/большое_лого.png" alt="505 STUDIO" class="logo-footer"
+      /></a>
+
+      <div class="footer-content">
+        <nav class="footer-nav">
+          <a href="#about" class="footer-link">О СТУДИИ</a>
+          <a href="services.html" class="footer-link">УСЛУГИ</a>
+          <a href="portfolio.html" class="footer-link">ПОРТФОЛИО</a>
+        </nav>
+
+        <div class="footer-contacts">
+          <a href="#" class="footer-contacts-item">+71234567889</a>
+          <a href="#" class="footer-contacts-item">505_studio@mail.ru</a>
+          <p class="footer-contacts-item">г. Чита, ул. Бабушкина, д. 66</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Все права защищены. 2026©</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
