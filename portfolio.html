@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио - 505 STUDIO</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="portfolio.css" />
+  </head>
+  <body>
+    <div class="burger-menu-overlay" id="burgerMenu">
+      <div class="menu-header container">
+        <a href="index.html">
+          <img src="image/логотип.png" alt="505 STUDIO" class="logo"
+        /></a>
+        <img
+          src="image/закрыть.png"
+          alt="Закрыть"
+          class="close-menu"
+          id="closeMenu"
+        />
+      </div>
+
+      <nav class="menu-content container">
+        <ul class="menu-list">
+          <li><a href="#about" class="menu-link active">О СТУДИИ</a></li>
+          <li><a href="services.html" class="menu-link">УСЛУГИ</a></li>
+          <li><a href="portfolio.html" class="menu-link">ПОРТФОЛИО</a></li>
+          <li><a href="#" class="menu-link">ПРОФИЛЬ</a></li>
+        </ul>
+
+        <div class="menu-contacts">
+          <p>+71234567889</p>
+          <p>505_studoi@mail.com</p>
+          <p>г. Чита, ул. Бабушкина, д. 66</p>
+        </div>
+      </nav>
+    </div>
+
+    <header class="header">
+      <div class="container">
+        <a href="index.html" class="logo-link">
+          <img src="image/логотип.png" alt="505 STUDIO" class="logo"
+        /></a>
+        <img
+          src="image/бергер.png"
+          alt="Меню"
+          class="burger-menu"
+          id="burger"
+        />
+      </div>
+    </header>
+
+    <main class="content">
+      <h1 class="heading">ПОРТФОЛИО</h1>
+
+      <div class="portfolio-controls">
+        <div class="search-container">
+          <input type="text" id="portfolioSearch" placeholder="ПОИСК" />
+          <button class="search-btn">
+            <img src="image/поиск.png" alt="" />
+          </button>
+        </div>
+
+        <div class="filter-container">
+          <button class="filter-btn active" data-filter="all">все</button>
+          <button class="filter-btn" data-filter="apartaments">квартиры</button>
+          <button class="filter-btn" data-filter="houses">дома</button>
+          <button class="filter-btn" data-filter="commercial">коммерция</button>
+        </div>
+      </div>
+
+      <div class="portfolio-grid" id="portfolioGrid">
+        <h2 class="heading">Дизайн интерьера квартир</h2>
+        <div class="portfolio-card" data-category="apartaments">
+          <div class="card-image">
+            <img src="image/проект1.png" alt="" />
+            <span class="area-tag">79 м²</span>
+          </div>
+          <div class="card-info">
+            <h3>Двухкомнатная квартира 79 м²</h3>
+            <p>
+              Современный минимализм с акцентами под старину. 78 м², 2 комнаты,
+              бюджет - 1.8 млн ₽
+            </p>
+            <a href="#" class="btn">Смотреть</a>
+          </div>
+        </div>
+
+        <h2 class="heading">Дизайн интерьера домов и коттеджей</h2>
+
+        <div class="portfolio-card" data-category="houses">
+          <div class="card-image">
+            <img src="image/проект2.png" alt="" />
+            <span class="area-tag">220 м²</span>
+          </div>
+          <div class="card-info">
+            <h3>Коттедж «Сосновый бор»</h3>
+            <p>
+              Современная классика: высокие потолки, панорамные окна. 220 м², 2
+              этажа + цоколь
+            </p>
+            <a href="#" class="btn">Смотреть</a>
+          </div>
+        </div>
+
+        <h2 class="heading">Дизайн интерьера коммерческих помещений</h2>
+
+        <div class="portfolio-card" data-category="commercial">
+          <div class="card-image">
+            <img src="image/проект3.png" alt="" />
+            <span class="area-tag">86 м²</span>
+          </div>
+          <div class="card-info">
+            <h3>Интерьер кафе “Арабика”</h3>
+            <p>
+              Уютное пространство для встреч: мягкий свет, зона бара и лаунж. 86
+              м², 40 посадочных
+            </p>
+            <a href="#" class="btn">Смотреть</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer-container">
+      <a href="index.html" class="link-footer">
+        <img src="image/большое_лого.png" alt="505 STUDIO" class="logo-footer"
+      /></a>
+
+      <div class="footer-content">
+        <nav class="footer-nav">
+          <a href="#about" class="footer-link">О СТУДИИ</a>
+          <a href="services.html" class="footer-link">УСЛУГИ</a>
+          <a href="portfolio.html" class="footer-link">ПОРТФОЛИО</a>
+        </nav>
+
+        <div class="footer-contacts">
+          <a href="#" class="footer-contacts-item">+71234567889</a>
+          <a href="#" class="footer-contacts-item">505_studio@mail.ru</a>
+          <p class="footer-contacts-item">г. Чита, ул. Бабушкина, д. 66</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Все права защищены. 2026©</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

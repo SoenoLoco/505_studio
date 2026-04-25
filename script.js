@@ -1,66 +1,115 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // --- ЭЛЕМЕНТЫ МЕНЮ ---
   const burgerIcon = document.getElementById("burger");
   const closeIcon = document.getElementById("closeMenu");
   const mobileMenu = document.getElementById("burgerMenu");
   const menuLinks = document.querySelectorAll(".menu-link");
 
+  // --- ЭЛЕМЕНТЫ ПОРТФОЛИО ---
+  const searchInput = document.getElementById("portfolioSearch");
+  const searchBtn = document.querySelector(".search-btn"); // Золотая кнопка
+  const filterBtns = document.querySelectorAll(".filter-btn");
+  const cards = document.querySelectorAll(".portfolio-card");
+
   // --- Открытие/Закрытие меню ---
-  burgerIcon.addEventListener("click", () => {
-    mobileMenu.classList.add("active");
-    document.body.style.overflow = "hidden";
-    updateActiveLink(); // Обновляем активную ссылку при открытии
-  });
+  if (burgerIcon && mobileMenu) {
+    burgerIcon.addEventListener("click", () => {
+      mobileMenu.classList.add("active");
+      document.body.style.overflow = "hidden";
+      updateActiveLink();
+    });
+  }
 
   const closeMobileMenu = () => {
-    mobileMenu.classList.remove("active");
-    document.body.style.overflow = "auto";
+    if (mobileMenu) {
+      mobileMenu.classList.remove("active");
+      document.body.style.overflow = "auto";
+    }
   };
 
-  closeIcon.addEventListener("click", closeMobileMenu);
+  if (closeIcon) closeIcon.addEventListener("click", closeMobileMenu);
 
-  // --- Логика переключения активного пункта ---
+  // --- Логика переключения активного пункта меню ---
   function updateActiveLink() {
     const currentPath = window.location.pathname;
     const currentHash = window.location.hash;
 
     menuLinks.forEach((link) => {
       link.classList.remove("active");
+      const href = link.getAttribute("href");
+      if (!href) return;
 
-      // Получаем чистый путь из ссылки (например, index.html или services.html)
-      const linkPath = link.getAttribute("href").split("#")[0];
-      const linkHash = link.getAttribute("href").split("#")[1];
+      const linkPath = href.split("#")[0];
+      const linkHash = href.split("#")[1];
 
-      // 1. Проверка по файлу (на какой мы странице)
       if (currentPath.includes(linkPath) && linkPath !== "") {
         link.classList.add("active");
       }
-      // 2. Проверка по якорю (если мы на главной и скроллим секции)
       if (currentHash === "#" + linkHash && linkHash !== undefined) {
         menuLinks.forEach((l) => l.classList.remove("active"));
         link.classList.add("active");
       }
-      // 3. Если главная страница без хеша
-      if (currentPath.endsWith("/") || currentPath.endsWith("index.html")) {
-        if (
-          !currentHash &&
-          link.getAttribute("href").includes("index.html#about")
-        ) {
-          // По умолчанию подсвечиваем первый пункт на главной
-        }
-      }
     });
   }
 
-  // Закрытие при клике
   menuLinks.forEach((link) => {
     link.addEventListener("click", closeMobileMenu);
   });
 
-  // Отслеживание скролла для изменения активного пункта (для одностраничных переходов)
-  const observerOptions = {
-    threshold: 0.5,
-  };
+  // --- ЛОГИКА ПОРТФОЛИО (ПОИСК И ФИЛЬТРАЦИЯ) ---
+  function updatePortfolio() {
+    if (!cards.length) return; // Если мы не на странице портфолио, выходим
 
+    const searchText = searchInput ? searchInput.value.toLowerCase() : "";
+    const activeFilterBtn = document.querySelector(".filter-btn.active");
+    const activeFilter = activeFilterBtn
+      ? activeFilterBtn.dataset.filter
+      : "all";
+
+    cards.forEach((card) => {
+      const title = card.querySelector("h3").textContent.toLowerCase();
+      const category = card.dataset.category;
+
+      const matchesSearch = title.includes(searchText);
+      const matchesFilter = activeFilter === "all" || category === activeFilter;
+
+      // Показываем карточку, если она проходит и поиск, и фильтр
+      if (matchesSearch && matchesFilter) {
+        card.style.display = "flex";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  }
+
+  // Слушатели для поиска
+  if (searchBtn) {
+    searchBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      updatePortfolio();
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        updatePortfolio();
+      }
+    });
+  }
+
+  // Слушатели для фильтров
+  filterBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      filterBtns.forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+      updatePortfolio();
+    });
+  });
+
+  // --- ОСТАЛЬНОЕ (IntersectionObserver и Форма) ---
+  const observerOptions = { threshold: 0.5 };
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -75,27 +124,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }, observerOptions);
 
-  // Следим за всеми секциями, у которых есть ID
   document.querySelectorAll("section[id]").forEach((section) => {
     observer.observe(section);
   });
-});
 
-document.addEventListener("DOMContentLoaded", function () {
   const feedbackForm = document.querySelector(".feedback-form");
-
   if (feedbackForm) {
     feedbackForm.addEventListener("submit", function (e) {
-      // 1. Отменяем стандартную отправку и перезагрузку страницы
       e.preventDefault();
-
-      // Здесь в будущем можно добавить код для реальной отправки данных на почту
       console.log("Форма отправлена!");
-
-      // 2. Очищаем все поля формы (инпуты и селекты)
       this.reset();
-
-      // 3. Можно добавить уведомление для пользователя
       alert("Спасибо! Ваша заявка отправлена.");
     });
   }

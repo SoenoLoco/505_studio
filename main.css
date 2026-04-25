@@ -113,7 +113,6 @@ section[id] {
   text-decoration: underline;
   text-underline-offset: 2.42vw;
   text-decoration-thickness: 0.2vw;
-
   transform: translateX(4.83vw);
 }
 
@@ -121,18 +120,9 @@ section[id] {
   display: flex;
   flex-direction: column;
   gap: 4.35vw;
-  margin-left: 9.18vw;
-}
-
-.contact-link,
-.contact-address {
-  font-family: "TypedText";
-  color: #e7f5e7;
-  font-size: 4.35vw;
 }
 
 /* шапка */
-
 main {
   margin-top: 22vw;
 }
