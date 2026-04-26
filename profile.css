@@ -69,7 +69,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #bd9d60;
+  color: var(--color-accent);
   font-size: 7vw;
   margin-left: 0.86vw;
   margin-right: 3.86vw;
@@ -121,17 +121,16 @@
 }
 
 .project-mini-info h3 {
-  color: #ac9f2c;
+  color: var(--color-accent);
   font-size: 6vw;
-  margin-bottom: 6vw;
+  margin-bottom: 7vw;
   font-weight: normal;
   font-family: "Headlines";
 }
 
 .project-mini-info p {
-  color: #f1efde;
+  color: var(--color-text-cold);
   font-size: 3.8vw;
-  line-height: 1.4;
-  margin: 0.5vw 0;
+  margin: 0.4vw 0;
   font-weight: 300;
 }

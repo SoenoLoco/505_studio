@@ -5,7 +5,7 @@
 }
 
 .back-link {
-  color: #bd9d60;
+  color: var(--color-accent);
   text-decoration: none;
   font-size: 5.35vw;
   display: flex;
@@ -33,18 +33,16 @@
   align-items: center;
   gap: 4vw;
   max-height: 156vw;
-  box-sizing: border-box;
 }
 
 .overlay-text {
-  background: #384e39;
+  background: var(--color-bg);
   padding: 5vw 6vw;
   border-radius: 4.5vw;
-  color: #e7f5e7;
+  color: var(--color-text-cold);
   line-height: 1.4;
   font-size: 3.8vw;
   width: 95%;
-  box-sizing: border-box;
 }
 
 .list-box ul {
@@ -53,7 +51,7 @@
 
 .list-box li::before {
   content: "•";
-  color: #bd9d60;
+  color: var(--color-accent);
   margin-right: 3vw;
   font-weight: bold;
 }
@@ -66,12 +64,7 @@
 
 .btn {
   align-self: flex-end;
-  background-color: #f1efde;
-  color: #384e39;
-  border: none;
   padding: 3.5vw 10vw;
-  font-size: 4.3vw;
-  font-weight: 500;
-  cursor: pointer;
   margin-top: auto;
+  margin-right: 1.86vw;
 }

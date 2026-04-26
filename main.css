@@ -1,3 +1,10 @@
+:root{
+  --color-bg: #384e39;
+  --color-accent: #bd9d60;
+  --color-text-cold: #e7f5e7;
+  --color-text-warm: #efead7;
+}
+
 @font-face {
   font-family: "Headlines";
   src: url(fonts/PlayfairDisplay-заголовки.ttf);
@@ -15,8 +22,8 @@
 }
 
 body {
-  background-color: #384e39;
-  color: #e7f5e7;
+  background-color: var(--color-bg);
+  color: var(--color-text-cold);
   font-family: "TypedText";
   min-width: 320px;
 }
@@ -27,7 +34,7 @@ section[id] {
 /*заголовки*/
 .heading {
   font-family: "Headlines";
-  color: #bd9d60;
+  color: var(--color-accent);
   font-size: 6.76vw;
   margin-bottom: 4.35vw;
   margin-top: 6.76vw;
@@ -40,8 +47,8 @@ section[id] {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #efead7;
-  color: #384e39;
+  background-color: var(--color-text-warm);
+  color: var(--color-bg);
   font-size: 3.86vw;
   text-decoration: none;
   border-radius: 2.42vw;
@@ -58,7 +65,7 @@ section[id] {
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: #384e39;
+  background-color: var(--color-bg);
   z-index: 1000;
   display: block;
   flex-direction: column;
@@ -103,7 +110,7 @@ section[id] {
   display: inline-block;
   font-family: "Headlines";
   font-size: 7.73vw;
-  color: #e7f5e7;
+  color: var(--color-text-cold);
   text-decoration: none;
   margin-bottom: 7.25vw;
   transition: all 0.3s ease-out;
@@ -131,7 +138,7 @@ main {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #384e39;
+  background-color: var(--color-bg);
   z-index: 999;
   padding: 6.28vw 3.86vw;
   margin-top: 0;
@@ -160,7 +167,7 @@ main {
 /*баннер*/
 .title-1 {
   font-family: "Headlines";
-  color: #bd9d60;
+  color: var(--color-accent);
   font-size: 9.18vw;
   margin-left: 9.9vw;
   margin-top: 4.83vw;
@@ -169,7 +176,7 @@ main {
 
 .title-2 {
   font-family: "Headlines";
-  color: #bd9d60;
+  color: var(--color-accent);
   font-size: 8.21vw;
   margin-left: 30.92vw;
   margin-top: -4.35vw;
@@ -250,8 +257,8 @@ main {
   width: calc(100% - 7.72vw);
   background: transparent;
   border: none;
-  border-bottom: 2px solid #e7f5e7;
-  color: #e7f5e7;
+  border-bottom: 2px solid var(--color-text-cold);
+  color: var(--color-text-cold);
   font-size: 4.83vw;
   margin-left: 3.86vw;
   margin-right: 3.86vw;
@@ -262,7 +269,7 @@ main {
 }
 
 .feedback-form input::placeholder {
-  color: #e7f5e7;
+  color: var(--color-text-cold);
   opacity: 1;
 }
 
@@ -277,8 +284,8 @@ main {
 }
 
 .feedback-form select option {
-  background-color: #384e39;
-  color: #e7f5e7;
+  background-color: var(--color-bg);
+  color: var(--color-text-cold);
   font-family: "TypedText";
 }
 
@@ -313,7 +320,7 @@ main {
 }
 
 .footer-link {
-  color: #e7f5e7;
+  color: var(--color-text-cold);
   text-decoration: none;
   font-size: 2.9vw;
 }
@@ -330,7 +337,7 @@ main {
 }
 
 .footer-contacts-item {
-  color: #f2efe9;
+  color: var(--color-text-cold);
   text-decoration: none;
   font-size: 2.9vw;
 }
@@ -342,5 +349,5 @@ main {
 
 .footer-bottom p {
   font-size: 2.9vw;
-  color: #f2efe9;
+  color: var(--color-text-cold);
 }

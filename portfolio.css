@@ -13,17 +13,17 @@
 
 #portfolioSearch {
   flex: 1;
-  background: #e1ede1;
+  background: var(--color-text-cold);
   border: none;
   border-radius: 3vw;
   padding: 2vw 5vw;
   font-size: 4.5vw;
-  color: #384e39;
+  color: var(--color-bg);
   outline: none;
 }
 
 .search-btn {
-  background: #f1efde;
+  background: var(--color-text-warm);
   border: none;
   border-radius: 3vw;
   width: 18vw;
@@ -48,25 +48,24 @@
 .filter-container {
   display: flex;
   gap: 1.2vw;
-  overflow-x: auto;
   padding-bottom: 2vw;
 }
 
 .filter-btn {
-  background: #f1efde;
+  background: var(--color-text-warm);
   border: none;
   border-radius: 4vw;
   padding: 2vw 4.8vw;
   font-size: 3.5vw;
-  color: #384e39;
+  color: var(--color-bg);
   white-space: nowrap;
   transition: 0.3s;
 }
 
 .filter-btn.active {
-  background: #384e39;
-  color: #f1efde;
-  border: 1px solid #bd9d60;
+  background: var(--color-bg);
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
 }
 
 /*карточки*/
@@ -101,9 +100,8 @@
   position: absolute;
   top: 2vw;
   left: 2vw;
-  color: #ffffff;
+  color: var(--color-text-cold);
   font-size: 6vw;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 .card-info {
@@ -114,7 +112,7 @@
 }
 
 .card-info h3 {
-  color: #bd9d60;
+  color: var(--color-accent);
   font-size: 4.2vw;
   font-weight: normal;
   margin-bottom: 2vw;
@@ -124,7 +122,7 @@
 }
 
 .card-info p {
-  color: #e7f5e7;
+  color: var(--color-text-cold);
   font-size: 3.2vw;
   line-height: 1.4;
   margin-bottom: 4vw;
