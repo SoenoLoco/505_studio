@@ -1,4 +1,4 @@
-:root{
+:root {
   --color-bg: #384e39;
   --color-accent: #bd9d60;
   --color-text-cold: #e7f5e7;
@@ -217,6 +217,10 @@ main {
 }
 
 /*проекты*/
+.pc-only {
+  display: none;
+}
+
 .projects-img-large {
   width: 65.94vw;
   height: auto;
@@ -350,4 +354,297 @@ main {
 .footer-bottom p {
   font-size: 2.9vw;
   color: var(--color-text-cold);
+}
+
+.logo-header {
+  display: none;
+}
+
+/*адаптив пк*/
+@media (min-width: 1024px) {
+  .logo-link {
+    display: none;
+  }
+
+  .logo-header {
+    display: flex !important;
+    width: 100%;
+    max-width: 120vw;
+    height: auto;
+    display: block;
+  }
+  .pc-only {
+    display: flex !important;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4vw;
+    max-width: 100%;
+    padding: 0 4vw;
+  }
+  .heading {
+    font-size: 4.4vw;
+  }
+
+  /*шапка*/
+  .header {
+    padding: 3vw 0;
+    position:absolute;
+  }
+  .burger-menu {
+    display: none;
+  }
+  .pc-nav {
+    display: flex !important;
+    justify-content: center;
+    gap: 4vw;
+  }
+
+  .link-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .pc-nav-link {
+    color: var(--color-text-cold);
+    font-family: "Headlines";
+    text-decoration: none;
+    font-size: 3.1vw;
+    letter-spacing: 0.1em;
+  }
+
+  /*баннер*/
+  .banner {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
+    overflow: visible;
+  }
+
+  .title-1,
+  .title-2 {
+    position: absolute;
+    z-index: 10;
+    font-family: "Headlines";
+    font-size: 8vw;
+    line-height: 0.9;
+    color: var(--color-accent);
+    margin: 0;
+  }
+  .title-1 {
+    top: 5vw;
+    left: 12vw;
+  }
+  .title-2 {
+    top: 12vw;
+    left: 28vw;
+  }
+
+  .description-1 {
+    text-align: left;
+    margin-bottom: 10vw;
+    font-size: 1.9vw;
+    margin-right: 0.75vw;
+    margin-left: 4.86vw;
+  }
+
+  .image-btn-banner {
+    grid-column: 2;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+
+  .img-main {
+    width: 44vw;
+    height: auto;
+    margin-top: 6vw;
+  }
+
+  .btn-banner {
+    position: absolute;
+    left: -25vw;
+    width: 25vw;
+    height: 5vw;
+    font-size: 2vw;
+    border-radius: 1vw;
+  }
+
+  /*о нас*/
+  .about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1vw;
+    align-items: center;
+    padding: 0 1vw;
+  }
+
+  .about-content .description:first-of-type {
+    grid-column: span 2;
+    max-width: 800px;
+    margin-bottom: 20px;
+    font-size: 1.9vw;
+    line-height: 1.6;
+    margin-left: 20vw;
+  }
+
+  .about-img {
+    grid-column: 1;
+    width: 100%;
+    max-width: 40vw;
+    height: auto;
+    margin: 0;
+    order: unset;
+  }
+
+  .about-content .description:last-of-type {
+    grid-column: 2;
+    font-size: 1.9vw;
+    line-height: 1.5;
+    order: unset;
+    margin-top: auto;
+    margin-bottom: 0;
+    margin-left: -5vw;
+    margin-right: 3vw;
+  }
+
+  /*проекты*/
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2vw;
+    grid-template-rows: auto auto;
+    padding: 0 4vw;
+    align-items: start;
+  }
+
+  .projects-grid img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: 0 !important;
+  }
+
+  .projects-img-large {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .pc-project-extra:first-of-type {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .pc-project-extra:last-of-type {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .img-small-1 {
+    grid-column: 3;
+    grid-row: 2;
+  }
+
+  .projects-btn-img {
+    display: contents;
+  }
+
+  .img-small-2 {
+    grid-column: 4;
+    grid-row: 1;
+  }
+
+  .projects-btn-img .btn {
+    grid-column: 4;
+    grid-row: 2;
+    align-self: end;
+    width: 100%;
+    height: 5vw;
+    font-size: 2.1vw;
+    border-radius: 1vw;
+  }
+
+  /*форма*/
+  .feedback-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: start;
+    margin-left: 4vw;
+    gap: 2.4vw;
+  }
+
+  .feedback-container .heading {
+    margin: 0;
+  }
+
+  .feedback-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin-top: 5.5vw;
+  }
+
+  .feedback-form input {
+    font-size: 2.5vw;
+    padding-bottom: 1.86vw;
+    margin-top: -4vw;
+  }
+
+  .feedback-form select {
+    margin-top: -4vw;
+    padding-bottom: 1.86vw;
+    font-size: 2.5vw;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10L12 15L17 10' stroke='%23e7f5e7' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 5px) center;
+    background-size: 5vw;
+    padding-right: 2vw;
+  }
+
+  .form-btn {
+    margin-top: -4vw;
+    grid-column: 2;
+    justify-self: end;
+    width: 25vw;
+    height: 5vw;
+    font-size: 2vw;
+    border-radius: 1vw;
+    font-family: "TypedText";
+  }
+
+  /*футер*/
+  .logo-footer {
+    display: flex !important;
+    width: 93%;
+    max-width: 120vw;
+    height: auto;
+    display: block;
+  }
+
+  .footer-link{
+    font-size: 2vw;
+    margin-top: 0.09vw;
+  }
+
+  .footer-contacts-item{
+    font-size: 2vw;
+  }
+
+  .footer-bottom p{
+    font-size: 2vw;
+    margin-top: -9.3vw;
+    margin-right: 10vw;
+    margin-bottom: -2vw;
+  }
 }
