@@ -145,6 +145,9 @@ main {
   margin-left: 0;
 }
 @media (min-width: 768px) {
+  section[id] {
+  scroll-margin-top: 2vw;
+}
   .header {
     padding: 6.28vw 3.68vw 1vw 3.86vw;
   }
