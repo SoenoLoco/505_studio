@@ -50,6 +50,13 @@ textarea:focus {
   margin-bottom: 10vw;
 }
 
+@media (min-width: 768px) {
+  .checkbox-group {
+    font-size: 4vw;
+  }
+
+}
+
 /*другое*/
 .social-login {
   text-align: center;

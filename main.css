@@ -144,6 +144,11 @@ main {
   margin-top: 0;
   margin-left: 0;
 }
+@media (min-width: 768px) {
+  .header {
+    padding: 6.28vw 3.68vw 1vw 3.86vw;
+  }
+}
 
 .container {
   display: flex;
