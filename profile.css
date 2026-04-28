@@ -134,3 +134,92 @@
   margin: 0.4vw 0;
   font-weight: 300;
 }
+
+/*адаптив пк*/
+@media (min-width: 1024px) {
+  .content {
+    margin-top: 22vw;
+  }
+
+  .header-row {
+    margin-bottom: 0;
+  }
+
+  .notification-btn img {
+    width: 5vw;
+    margin-top: 2vw;
+  }
+
+  .user-header {
+    flex-direction: row;
+    align-items: center;
+    padding: 1vw 5vw;
+    margin-bottom: 2vw;
+  }
+
+  .profile-avatar {
+    width: 35vw;
+    height: auto;
+  }
+
+  .user-meta {
+    margin-top: 8vw;
+  }
+
+  .user-name {
+    font-size: 4.5vw;
+    line-height: 1.2;
+  }
+
+  .user-handle {
+    font-size: 3.8vw;
+    margin-top: 0;
+  }
+
+  .settings-btn img {
+    width: 5vw;
+    margin-left: 0;
+    margin-top: 2.5vw;
+  }
+
+  .menu-item {
+    margin-top: -2vw;
+    font-size: 4vw;
+  }
+
+  .arrow {
+    width: 2vw;
+  }
+
+  .arrow-icon {
+    width: 2vw;
+  }
+
+  .project-mini-card{
+    margin-left: 15vw;
+    margin-top: -5vw;
+  }
+  
+  .project-mini-card img {
+    width: 35vw;
+    height: 35vw;
+    object-fit: cover;
+  }
+
+  .project-mini-info h3 {
+    font-size: 3.2vw;
+    margin-bottom: 19.5vw;
+  }
+
+  .project-mini-info p {
+    font-size: 1.6vw;
+  }
+
+  .project-mini-info .btn {
+    margin-top: 2vw;
+    font-size: 2vw;
+    width: 25vw;
+    height: 5vw;
+    border-radius: 1vw;
+  }
+}

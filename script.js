@@ -143,3 +143,26 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const tabs = document.querySelectorAll(".nav-tab");
+  const cards = document.querySelectorAll(".services-card");
+
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      // 1. Удаляем active у всех табов и карточек
+      tabs.forEach((t) => t.classList.remove("active"));
+      cards.forEach((c) => c.classList.remove("active"));
+
+      // 2. Добавляем active текущему табу
+      tab.classList.add("active");
+
+      // 3. Находим нужную карточку по ID из data-target и показываем её
+      const targetId = tab.getAttribute("data-target");
+      const targetCard = document.getElementById(targetId);
+      if (targetCard) {
+        targetCard.classList.add("active");
+      }
+    });
+  });
+});

@@ -392,7 +392,7 @@ main {
   /*шапка*/
   .header {
     padding: 3vw 0;
-    position:absolute;
+    position: absolute;
   }
   .burger-menu {
     display: none;
@@ -426,6 +426,14 @@ main {
     overflow: visible;
   }
 
+  .banner p {
+    text-align: left;
+    margin-bottom: 8vw;
+    font-size: 1.9vw;
+    margin-right: 0.75vw;
+    margin-left: 4.86vw;
+  }
+
   .title-1,
   .title-2 {
     position: absolute;
@@ -443,14 +451,6 @@ main {
   .title-2 {
     top: 12vw;
     left: 28vw;
-  }
-
-  .description-1 {
-    text-align: left;
-    margin-bottom: 10vw;
-    font-size: 1.9vw;
-    margin-right: 0.75vw;
-    margin-left: 4.86vw;
   }
 
   .image-btn-banner {
@@ -632,16 +632,24 @@ main {
     display: block;
   }
 
-  .footer-link{
+  .footer-link {
     font-size: 2vw;
     margin-top: 0.09vw;
   }
 
-  .footer-contacts-item{
+  .footer-contacts {
+    gap: 2vw;
+  }
+
+  .footer-nav {
+    gap: 2vw;
+  }
+
+  .footer-contacts-item {
     font-size: 2vw;
   }
 
-  .footer-bottom p{
+  .footer-bottom p {
     font-size: 2vw;
     margin-top: -9.3vw;
     margin-right: 10vw;

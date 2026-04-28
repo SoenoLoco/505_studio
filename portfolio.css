@@ -69,8 +69,8 @@
 }
 
 /*карточки*/
-.heading{
-    margin-bottom: 1.35vw;
+.heading {
+  margin-bottom: 1.35vw;
 }
 .portfolio-grid {
   margin-bottom: 6.76vw;
@@ -109,6 +109,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  margin-bottom: auto;
 }
 
 .card-info h3 {
@@ -117,7 +118,7 @@
   font-weight: normal;
   margin-bottom: 2vw;
   line-height: 1.2;
-  margin-bottom: 12vw;
+  margin-bottom: 7vw;
   font-family: "Headlines";
 }
 
@@ -126,4 +127,85 @@
   font-size: 3.2vw;
   line-height: 1.4;
   margin-bottom: 4vw;
+}
+
+/*адаптив пк*/
+@media (min-width: 1024px) {
+  /*поиск и фильтрация*/
+  .content {
+    margin-top: 28vw;
+  }
+
+  #portfolioSearch {
+    border-radius: 2vw;
+    padding: 2vw 3vw;
+    font-size: 2vw;
+    height: 6vw;
+  }
+
+  .search-btn {
+    width: 10vw;
+    height: 6vw;
+    border-radius: 2vw;
+  }
+
+  .search-btn img {
+    width: 3.5vw;
+  }
+
+  .portfolio-controls {
+    width: 40%;
+    padding: 0;
+    margin: 0 0 0 4vw;
+  }
+
+  .filter-btn {
+    border-radius: 1vw;
+    font-size: 2vw;
+    transition: 0.3s;
+    padding: 1vw 8vw;
+    margin-top: -2vw;
+  }
+
+  .filter-container {
+    margin-bottom: -4vw;
+  }
+
+  /*карточки*/
+  .portfolio-card {
+    margin-bottom: -4.5vw;
+  }
+  .card-image {
+    width: 35vw;
+    height: 45vw;
+  }
+  .card-image img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .area-tag {
+    font-size: 4vw;
+  }
+
+  .card-info {
+    width: 55%;
+  }
+
+  .card-info h3 {
+    font-size: 3vw;
+  }
+
+  .card-info p {
+    font-size: 2vw;
+    margin-bottom: 1.8vw;
+    margin-top: 19vw;
+  }
+
+  .card-info a {
+    width: 15vw;
+    height: 5vw;
+    border-radius: 1vw;
+    font-size: 2vw;
+  }
 }

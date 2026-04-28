@@ -44,6 +44,21 @@
         <a href="index.html" class="logo-link">
           <img src="image/логотип.png" alt="505 STUDIO" class="logo"
         /></a>
+
+        <a href="index.html" class="link-header">
+          <img
+            src="image/большое_лого.png"
+            alt="505 STUDIO"
+            class="logo-header"
+        /></a>
+
+        <nav class="pc-nav pc-only">
+          <a href="index.html#about" class="pc-nav-link">О СТУДИИ</a>
+          <a href="services.html" class="pc-nav-link">УСЛУГИ</a>
+          <a href="portfolio.html" class="pc-nav-link">ПОРТФОЛИО</a>
+          <a href="auth.html" class="pc-nav-link">ПРОФИЛЬ</a>
+        </nav>
+
         <img
           src="image/бергер.png"
           alt="Меню"
@@ -77,6 +92,7 @@
           </select>
           <button type="button" class="btn calc-btn">Рассчитать</button>
         </form>
+
         <div class="calc-result">
           <h2 class="heading">Примерный расчет</h2>
           <div class="calc-item">
@@ -105,7 +121,22 @@
       <section class="services-list" id="services">
         <h2 class="heading">УСЛУГИ</h2>
 
-        <div class="services-card">
+        <div class="services-nav-desktop">
+          <button class="nav-tab active" data-target="plan">
+            Планировочное решение
+          </button>
+          <button class="nav-tab" data-target="viz">3D-визуализация</button>
+          <button class="nav-tab" data-target="docs">
+            Рабочая документация
+          </button>
+          <button class="nav-tab" data-target="complect">Комплектация</button>
+          <button class="nav-tab" data-target="nadzor">Авторский надзор</button>
+          <button class="nav-tab" data-target="result">
+            Результаты работы
+          </button>
+        </div>
+
+        <div class="services-card active" id="plan">
           <h2 class="heading">Планировочное решение</h2>
           <img src="image/услуга_1.png" alt="Планировка" class="service-img" />
           <p class="description">
@@ -116,7 +147,12 @@
           <a href="index.html#feedback" class="btn service-btn">Заказать</a>
         </div>
 
-        <div class="services-card" onclick="location.href='service-detail.html';" style="cursor: pointer;">
+        <div
+          class="services-card"
+          id="viz"
+          onclick="location.href = 'service-detail.html'"
+          style="cursor: pointer"
+        >
           <h2 class="heading">ЗD-визуализация</h2>
           <img src="image/услуга_2.png" alt="Планировка" class="service-img" />
           <p class="description">
@@ -124,10 +160,15 @@
             Фотореалистичные изображения всех помещений с учётом освещения,
             текстур и расстановки мебели.
           </p>
-          <a href="index.html#feedback" class="btn service-btn" onclick="event.stopPropagation();">Заказать</a>
+          <a
+            href="index.html#feedback"
+            class="btn service-btn"
+            onclick="event.stopPropagation()"
+            >Заказать</a
+          >
         </div>
 
-        <div class="services-card">
+        <div class="services-card" id="docs">
           <h2 class="heading">Рабочая документация</h2>
           <img src="image/услуга_3.png" alt="Планировка" class="service-img" />
           <p class="description">
@@ -137,7 +178,7 @@
           <a href="index.html#feedback" class="btn service-btn">Заказать</a>
         </div>
 
-        <div class="services-card">
+        <div class="services-card" id="complect">
           <h2 class="heading">Комплектация</h2>
           <img src="image/услуга_4.png" alt="Планировка" class="service-img" />
           <p class="description">
@@ -147,7 +188,7 @@
           <a href="index.html#feedback" class="btn service-btn">Заказать</a>
         </div>
 
-        <div class="services-card">
+        <div class="services-card" id="nadzor">
           <h2 class="heading">Авторский надзор</h2>
           <img src="image/услуга_5.png" alt="Планировка" class="service-img" />
           <p class="description">
@@ -158,7 +199,7 @@
           <a href="index.html#feedback" class="btn service-btn">Заказать</a>
         </div>
 
-        <div class="services-card">
+        <div class="services-card" id="result">
           <h2 class="heading">Результаты работы</h2>
           <img src="image/услуга_6.png" alt="Планировка" class="service-img" />
           <p class="description">
